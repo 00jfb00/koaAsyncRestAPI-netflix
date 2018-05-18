@@ -1,26 +1,5 @@
 {
   "name": "koa-restful-boilerplate",
-  "description": "Koa 2 RESTful API boilerplate",
-  "version": "1.0.0",
-  "author": "Thomas Blanc-Hector",
-  "keywords": [
-    "koa",
-    "rest",
-    "api",
-    "mongodb",
-    "mongoose",
-    "async",
-    "es7"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jsnomad/koa-restful-boilerplate.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jsnomad/koa-restful-boilerplate/issues"
-  },
-  "homepage": "https://github.com/jsnomad/koa-restful-boilerplate#readme",
   "main": "server/index.js",
   "scripts": {
     "start": "nodemon server/ --exec babel-node",
@@ -40,7 +19,10 @@
     "koa-jwt": "^3.3.0",
     "koa-logger": "^3.1.0",
     "koa-router": "^7.3.0",
-    "mongoose": "^5.0.1"
+    "mongoose": "^5.0.1",
+    "node-fetch": "^2.1.2",
+    "request": "^2.86.0",
+    "uninstall": "0.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
