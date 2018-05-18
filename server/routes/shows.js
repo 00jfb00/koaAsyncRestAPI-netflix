@@ -12,9 +12,9 @@ router.prefix(`/${baseApi}/${api}`);
 
 router.get('/fetch/:qntReg', ShowsControllers.fetch);
 
-router.get('/', ShowsControllers.find);
+router.get('/find', ShowsControllers.find);
 
-router.get('/:id', ShowsControllers.findById);
+router.get('/find/:id', ShowsControllers.findById);
 
 router.get('/groupedByGenre', ShowsControllers.findGroupedByGenre);
 

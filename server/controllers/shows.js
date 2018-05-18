@@ -75,28 +75,21 @@ class ShowsControllers {
       return genres
     });
     for (let genre of genres) {
-      await Shows
-        .aggregate([
-          {
-            $project: {
-              details: 0
-            }
-          }, {
-            $match: {
-              "details.genres": {
-                "$in": [genre]
-              }
-            }
-          }, {
-            $sort: {
-              "details.year": -1
-            }
-          }, {
-            $limit: 5
-          }
-        ], function (err, shows) {
+      await Shows.find({
+        "details.genres": {
+          "$in": [genre]
+        }
+      }, {
+          details: 0,
+          _id: 0
+        })
+        .sort({"details.year": -1})
+        .limit(5)
+        .exec((err, shows) => {
+          console.log(genre , shows.map(g => g.name))
           groupeds[genre] = shows
         })
+        console.log(groupeds[genre])
     }
     ctx.body = groupeds;
   }
