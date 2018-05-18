@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 node_modules
 .DS_Store
 /dist
 npm-debug.log
 package-lock.json
-=======
-node_modules/
->>>>>>> b2342771799169c023f465c60b8d8602df65fab0

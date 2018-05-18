@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Koa 2 Restful Boilerplate
 
 ## Description
@@ -41,6 +40,3 @@ npm run prod
 ## License
 
 MIT &copy; [Thomas Blanc-Hector](https://github.com/jsnomad)
-=======
-# koaAsyncRestAPI-netflix
->>>>>>> b2342771799169c023f465c60b8d8602df65fab0
